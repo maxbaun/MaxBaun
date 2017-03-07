@@ -1,0 +1,26 @@
+@import "../utils/variables.css";
+
+:global {
+	html,
+	body {
+		height: 100%;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		font-weight: 300;
+		font-size: 18px;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+		text-rendering: optimizeLegibility !important;
+		-webkit-font-smoothing: antialiased !important;
+
+		&.no-scroll{
+			overflow: hidden;
+			min-height: 100%;
+		}
+	}
+
+	#app {
+		height: 100%;
+		width: 100%;
+	}
+}

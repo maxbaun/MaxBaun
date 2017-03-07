@@ -1,0 +1,24 @@
+{
+    "extends": ["xo", "xo-react"],
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "ecmaFeatures": {
+                "jsx": true,
+            },
+        },
+    },
+    "rules": {
+        "new-cap": 0,
+        "react/no-unused-prop-types": 0,
+    },
+    "globals": {
+        "fetch": true,
+        "window": true,
+        "document": true,
+        "AWS_ACCESSKEYID": true,
+        "AWS_SECRETACCESSKEY": true
+    },
+    "plugins": ["react", "babel", "import"]
+}

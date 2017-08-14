@@ -6,7 +6,7 @@ import config from './webpack.config';
 import fs from 'fs';
 
 const app = new Express();
-const port = 4000;
+const port = 1900;
 const compiler = webpack(config);
 
 if (process.env.ENV === 'development') {

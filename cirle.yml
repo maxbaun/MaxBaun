@@ -1,0 +1,8 @@
+machine:
+  node:
+    version: 7.2.0
+deployment:
+  production:
+    branch: master
+    commands:
+        - curl -X POST -d "" https://hooks.cloud66.com/stacks/redeploy/$CLOUD66_DEPLOY?services=maxbaun

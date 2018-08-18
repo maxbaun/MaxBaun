@@ -19,14 +19,17 @@ const mapDispatchToProps = dispatch => ({
 	actions: bindActionCreators({}, dispatch)
 });
 
-@connect(mapStateToProps, mapDispatchToProps)
+@connect(
+	mapStateToProps,
+	mapDispatchToProps
+)
 export default class Home extends Component {
 	render() {
 		return (
 			<div className={Styles.home}>
 				<div className={Styles.homeInner}>
 					<img className={Styles.logo} src={Logo}/>
-					<h3 className={Styles.comingSoon}>Coming Soonnnn</h3>
+					<h3 className={Styles.comingSoon}>Coming Soon</h3>
 					<div className={Styles.contact}>
 						<span className={Styles.email}>{ContactInfo.email}</span>
 						<span className={Styles.phone}>{ContactInfo.phone}</span>

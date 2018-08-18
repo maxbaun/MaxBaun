@@ -14,7 +14,7 @@ config.plugins.push(
 			let htmlPath = path.join(__dirname, 'dist', 'index.html');
 			let template = fs.readFileSync(htmlPath, 'utf8');
 
-			fs.writeFile(htmlPath, template.replace(/\/bundle.js/ig, '/bundle.' + stats.hash + '.js'));
+			fs.writeFile(htmlPath, template.replace(/\/bundle.js/ig, '/bundle.' + stats.hash + '.js'), () => {});
 		});
 	}
 );

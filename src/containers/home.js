@@ -29,7 +29,6 @@ export default class Home extends Component {
 			<div className={Styles.home}>
 				<div className={Styles.homeInner}>
 					<img className={Styles.logo} src={Logo}/>
-					<h3 className={Styles.comingSoon}>Coming Soon</h3>
 					<div className={Styles.contact}>
 						<span className={Styles.email}>{ContactInfo.email}</span>
 						<span className={Styles.phone}>{ContactInfo.phone}</span>
